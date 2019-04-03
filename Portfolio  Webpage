@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PortfolioPage</title>
+<style type="text/css">
+html,
+body {
+     font-family: 'Open Sans', sans-serif;
+     text-align: center;
+      }
+* {
+  margin: 0;
+  padding: 0;
+}
+nav ul {
+  text-align: right;
+  position: fixed;
+  width: 100%;
+  background-color: #8FBC8F;
+}
+nav ul li{
+	display: inline-block;
+	margin: 40px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #00008B;
+  font-size: 25px;
+}
+nav ul li a:hover {
+  color: black;
+  font-weight: bold;
+}
+.intro {
+  top: 0;
+  background: gray;
+  min-height: 350px;
+  padding-top: 300px;
+  
+}
+.intro p{
+	color:orange;
+}
+.project {
+  text-decoration: none;
+  color: #008080;
+  display: inline-block;
+  overflow: hidden;
+  border: 2px solid lightblue;
+  height: 250px;
+  width: 300px;
+  margin: 20px 100px;
+  color: black;
+
+}
+#projects{
+  
+  padding-top: 40px; 
+}
+.project-title {
+  font-weight: bold;
+  
+
+}
+.work .work-header {
+  margin-top: 50px;
+  color: black;
+  font-weight: bold;
+}
+
+.project-pic {
+  width: 100%;
+  height: 220px;
+  border-bottom: 2px solid lightblue;
+}
+
+.show-all {
+  text-decoration: none;
+  display: block;
+  width: 200px;
+  height: 30px;
+  margin: 20px auto 90px;
+  background: #e0ebe8;
+  color: black;
+  font-weight: bold;
+  font-size: 1em;
+  border: 2px solid #90C695;
+  border-radius: 4px;
+  cursor: pointer;
+  padding-top:10px;
+}
+.show-all:hover {
+  background: #E4F1FE;
+  
+}
+
+.contact {
+  background:   #F5F5DC;
+  padding-bottom: 150px;
+}
+
+.header {
+  padding: 160px 0 110px;
+}
+.contact-details {
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 35px 45px 35px;
+  list-style-type: none;
+  border: 2px solid #90C695;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  background: #e0ebe8;
+  color: #008080;
+  text-decoration: none;
+}
+
+.contact-details:hover {
+  background: #E4F1FE;
+  color: black;
+}
+footer {
+  padding: 20px;
+  background: #22313F;
+  color: white;
+  line-height: 50px;
+}
+
+footer a {
+  color: white;
+}
+@media only screen and (max-width: 700px) {
+  nav ul {
+    text-align: center;
+  }
+  nav ul li {
+    margin: 20px;
+  }
+  #projects {
+    margin: 0px 0;
+  }
+}
+
+	</style>
+</head>
+<body>
+ <nav>
+ 	<ul id="navbar">
+ 	<li><a href="#welcome-section">About</a></li>
+ 	<li><a href="#projects">Content</a></li>
+ 	<li><a href="#contact">Contact</a></li>
+    </ul>
+ </nav>
+ <div id="welcome-section" class="intro">
+ 	<h1>Hii I'm Manpreet</h1>
+ 	<p>I'm a Web Developer</p>
+ </div>
+ <div class="work">
+  <section id="projects">
+    <h3 class="work-header">There are some projects</h3>
+
+ 	  <a href="https://codepen.io/manpreet-singh10196/pen/KERmVw" target="_blank" class="project project-tile">
+    <img class="project-pic" src="https://www.w3schools.com/w3css/img_demo_homepage.jpg" alt="project">
+    <div class="project-title">Css Documentation Page</div>
+    </a>
+
+ 	  <a href="https://codepen.io/manpreet-singh10196/pen/eXMPLe" target="_blank" class="project project-tile">
+    <img class="project-pic" src="https://wpdia.com/wp-content/uploads/2016/11/WordPress-Product-Landing-Page-Theme-Proland.png" alt="project">
+    <div class="project-title">Product Landing Page</div>
+    </a>
+
+     <a href="https://codepen.io/FreeCodeCamp/pen/PNKdjo" target="_blank" class="project project-tile">
+     <img class="project-pic" src="http://image.hackpundit.com/wp-content/uploads/20151108141143/Division_by_zero_on_android_2.2.1_calculator.png" alt="project">
+     <div class="project-title">JavaScript Calculator</div>
+     </a>
+
+    <a href="https://codepen.io/manpreet-singh10196/pen/yryLbW" target="_blank" class="project project-tile">
+    <img class="project-pic" src="https://fiverr-res.cloudinary.com/image/upload/t_gig_pdf_gallery_view_ver4,f_jpg/20170319/DEMO_1_itquy4.jpg" alt="project">
+    <div class="project-title">Survey Form</div>
+    </a>
+
+    <a href="https://codepen.io/manpreet-singh10196/pen/VNYweP" target="_blank" class="project project-tile">
+    <img class="project-pic" src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Bolt_se_aposenta_com_medalha_de_ouro_no_4_x_100_metros_1039118-19.08.2016_frz-9565_%28cropped%29.jpg" alt="project">
+    <div class="project-title">Tribute Page</div>
+    </a>
+
+    <a href="https://codepen.io/dashboard/" class="show-all" target="_blank">Show all</a>
+  </section>
+ </div>
+ <div id="contact" class="contact">
+  <div class="header">
+    <h1>Let's work together...</h1>
+ </div>
+ <a href="https://codepen.io/manpreet-singh10196/" target="_blank" class="contact-details">Free Codecamp</a>
+  <a id='profile-link' href="https://github.com/manpreet-singh10196" target="_blank" class="contact-details">GitHub</a>
+  <a href="https://www.linkedin.com/in/manpreet-singh-027199181/" target="_blank" class="contact-details">LinkeDin</a>
+  <a href="https://www.facebook.com/Manpreet96Aulakh" class="contact-details">Facebook</a>
+  <a href="https://www.instagram.com/___manpreet___aulakh___/" class="contact-details">Instagram</a>
+</div>
+
+<footer>This is just a Portfolio Page, All the projects and contact details given are real.
+  <p>&copy; Created by <a href="https://codepen.io/manpreet-singh10196/" target="_blank">MANPREET SINGH</a></p>
+</footer>
+
+</body>
+</html>
