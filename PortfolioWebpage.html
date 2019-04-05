@@ -3,7 +3,9 @@
 <head>
 <title>PortfolioPage</title>
 <style type="text/css">
-html,
+html {
+  scroll-behavior: smooth;
+}
 body {
      font-family: 'Open Sans', sans-serif;
      text-align: center;
@@ -16,7 +18,9 @@ nav ul {
   text-align: right;
   position: fixed;
   width: 100%;
-  background-color: #8FBC8F;
+  background-color: white;
+  box-shadow: 2px 2px 5px black;
+  z-index: 2;
 }
 nav ul li{
 	display: inline-block;
@@ -26,78 +30,102 @@ nav ul li{
 }
 nav ul li a{
 	text-decoration: none;
-	color: #00008B;
-  font-size: 25px;
+	color: black;
+  font-size: 20px;
 }
 nav ul li a:hover {
-  color: black;
+
+  background-color: black;
+  color: white;
   font-weight: bold;
+ transform: scale(1.05);
+  box-shadow: 5px 5px 10px black;
+
+
 }
 .intro {
   top: 0;
-  background: gray;
+  background-attachment: fixed;
+  background-image: url(http://www.winners2000.co.uk/2017/wp-content/uploads/2017/03/gym-background-demo-img.jpg);
   min-height: 350px;
   padding-top: 300px;
+  width: 100%;
   
 }
+.intro h1{
+	color:white;
+  font-size:50px;
+  font-weight: normal;
+}
 .intro p{
-	color:orange;
+  color:white;
+  font-size:25px;
+  font-weight: normal;
 }
 .project {
   text-decoration: none;
   color: #008080;
   display: inline-block;
   overflow: hidden;
-  border: 2px solid lightblue;
+  border: 2px solid black;
   height: 250px;
   width: 300px;
   margin: 20px 100px;
   color: black;
-
+  box-shadow: 2px 2px 5px black;
 }
 #projects{
-  
+  transition: 0.7s ease-in-out;
   padding-top: 40px; 
+}
+#projects h3{
+  font-size: 30px;
+  padding-bottom: 40px;
+  font-weight: normal;
+}
+#projects a:hover{
+  transform: scale(1.05);
+  box-shadow: 5px 5px 10px;
 }
 .project-title {
   font-weight: bold;
-  
-
+  background-color: black;
+  color: white;
+}
+.project-pic {
+  width: 100%;
+  height: 226px;
+  border-bottom: 2px solid black;
 }
 .work .work-header {
   margin-top: 50px;
   color: black;
   font-weight: bold;
 }
-
-.project-pic {
-  width: 100%;
-  height: 220px;
-  border-bottom: 2px solid lightblue;
-}
-
 .show-all {
   text-decoration: none;
   display: block;
   width: 200px;
   height: 30px;
   margin: 20px auto 90px;
-  background: #e0ebe8;
+  background: white;
   color: black;
-  font-weight: bold;
-  font-size: 1em;
-  border: 2px solid #90C695;
+  font-weight: normal;
+  font-size: 20px;
+  border: 1px solid black;
   border-radius: 4px;
   cursor: pointer;
   padding-top:10px;
+  z-index: 1;
 }
 .show-all:hover {
-  background: #E4F1FE;
-  
+  background: black;
+  transform: scale(1.05);
+  box-shadow: 5px 5px 10px;
+  color: white;
 }
 
 .contact {
-  background:   #F5F5DC;
   padding-bottom: 150px;
 }
 
@@ -109,23 +137,24 @@ nav ul li a:hover {
   font-weight: bold;
   margin: 0 35px 45px 35px;
   list-style-type: none;
-  border: 2px solid #90C695;
+  border: 1px solid black;
   border-radius: 100%;
   width: 150px;
   height: 150px;
   line-height: 150px;
-  background: #e0ebe8;
-  color: #008080;
+  color: black;
   text-decoration: none;
 }
 
 .contact-details:hover {
-  background: #E4F1FE;
-  color: black;
+  background-color: black;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 5px 5px 10px;
 }
 footer {
   padding: 20px;
-  background: #22313F;
+  background: black;
   color: white;
   line-height: 50px;
 }
@@ -156,15 +185,16 @@ footer a {
     </ul>
  </nav>
  <div id="welcome-section" class="intro">
+
  	<h1>Hii I'm Manpreet</h1>
  	<p>I'm a Web Developer</p>
  </div>
  <div class="work">
   <section id="projects">
     <h3 class="work-header">There are some projects</h3>
-
+    
  	  <a href="https://codepen.io/manpreet-singh10196/pen/KERmVw" target="_blank" class="project project-tile">
-    <img class="project-pic" src="https://www.w3schools.com/w3css/img_demo_homepage.jpg" alt="project">
+    <img class="project-pic" src="https://freefrontend.com/assets/img/css-image-effects/direction-aware-3d-hover-effect-concept.png" alt="project">
     <div class="project-title">Css Documentation Page</div>
     </a>
 
